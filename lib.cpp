@@ -1,11 +1,14 @@
 #include "lib.h"
 
 float maxArray (float num[] , int d) {
-    for (int i = 0; i < d; i++) {
-        if (num[0] < num[i]) {
+    int i=0
+        while (i < d) {
+        if (num[0] > num[i]) {
+            i++;
+        }else {
             num[0] = num[i];
+            i++; }
         }
-    }
     return num[0];
-
+}
 
